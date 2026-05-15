@@ -25,3 +25,14 @@ Task.prototype.markCompleted = function () {
 // Array for Storing Tasks
 
 let tasks = [];
+
+// Selecting HTML Elements
+
+const taskForm = document.getElementById("taskForm");
+
+const taskList = document.getElementById("taskList");
+
+// ===============================
+// ADD TASK FUNCTIONALITY
+// ===============================
+
