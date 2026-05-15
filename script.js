@@ -66,3 +66,24 @@ taskForm.addEventListener("submit", function(event) {
     return;
 
   }
+// Create New Task Object
+
+  const newTask = new Task(taskName, taskDate);
+
+  // Add Task to Array
+
+  tasks.push(newTask);
+
+  // Display Updated Tasks
+
+  displayTasks();
+
+  // Clear Form Inputs
+
+  taskForm.reset();
+
+});
+
+// ===============================
+// DISPLAY TASKS
+// ===============================
