@@ -153,3 +153,25 @@ button:hover {
   text-decoration: line-through;
   color: gray;
 }
+
+/* =========================
+   TASK BUTTONS
+========================= */
+
+.task-buttons button {
+  margin-left: 10px;
+}
+
+/* =========================
+   FOOTER SECTION
+========================= */
+
+footer {
+  text-align: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
