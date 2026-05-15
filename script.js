@@ -87,3 +87,97 @@ taskForm.addEventListener("submit", function(event) {
 // ===============================
 // DISPLAY TASKS
 // ===============================
+
+function displayTasks() {
+
+  // Clear Existing Tasks
+
+  taskList.innerHTML = "";
+
+  // Loop Through Tasks
+
+  tasks.forEach(function(task, index) {
+
+    // Create List Item
+
+    const li = document.createElement("li");
+
+    li.classList.add("task-item");
+
+    // Add Completed Class
+
+    if(task.completed) {
+
+      li.classList.add("completed");
+
+    }
+
+    // Add Task Content
+
+    li.innerHTML = `
+
+      <div class="task-details">
+
+        <h3>${task.taskName}</h3>
+
+        <p>Due Date: ${task.taskDate || "No date added"}</p>
+
+      </div>
+
+      <div class="task-buttons">
+
+        <button onclick="completeTask(${index})">
+
+          ${task.completed ? "Completed" : "Complete"}
+
+        </button>
+
+        <button onclick="deleteTask(${index})">
+
+          Delete
+
+        </button>
+
+      </div>
+
+    `;
+
+    // Add Task to HTML List
+
+    taskList.appendChild(li);
+
+  });
+
+}
+
+// ===============================
+// COMPLETE TASK
+// ===============================
+
+function completeTask(index) {
+
+  // Mark Task as Completed
+
+  tasks[index].markCompleted();
+
+  // Refresh Display
+
+  displayTasks();
+
+}
+
+// ===============================
+// DELETE TASK
+// ===============================
+
+function deleteTask(index) {
+
+  // Remove Task from Array
+
+  tasks.splice(index, 1);
+
+  // Refresh Display
+
+  displayTasks();
+
+}
