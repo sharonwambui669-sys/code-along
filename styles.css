@@ -131,4 +131,25 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+/* =========================
+   TASK DETAILS
+========================= */
 
+.task-details h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.task-details p {
+  margin: 0;
+  color: #555555;
+}
+
+/* =========================
+   COMPLETED TASK
+========================= */
+
+.completed h3 {
+  text-decoration: line-through;
+  color: gray;
+}
