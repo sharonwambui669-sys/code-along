@@ -19,3 +19,9 @@ Task.prototype.markCompleted = function () {
   this.completed = true;
 
 };
+
+
+
+// Array for Storing Tasks
+
+let tasks = [];
