@@ -182,3 +182,18 @@ function deleteTask(index) {
 
 }
 
+// ===============================
+// DELETE TASK
+// ===============================
+
+function deleteTask(index) {
+
+  // Remove Task from Array
+
+  tasks.splice(index, 1);
+
+  // Refresh Display
+
+  displayTasks();
+
+}
