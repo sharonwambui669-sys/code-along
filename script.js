@@ -57,3 +57,12 @@ taskForm.addEventListener("submit", function(event) {
   const taskName = document.getElementById("taskName").value;
 
   const taskDate = document.getElementById("taskDate").value;
+    // Validation
+
+  if(taskName === "") {
+
+    alert("Please enter a task name.");
+
+    return;
+
+  }
