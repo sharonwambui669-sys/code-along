@@ -77,4 +77,24 @@ header p {
   box-sizing: border-box;
 }
 
+/* =========================
+   BUTTON STYLING
+========================= */
 
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #357bd8;
+}
+
+/* =========================
+   TASK SECTION
+========================= */
