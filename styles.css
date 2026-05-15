@@ -98,3 +98,37 @@ button:hover {
 /* =========================
    TASK SECTION
 ========================= */
+/* =========================
+   TASK SECTION
+========================= */
+
+.task-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-section h2 {
+  margin-bottom: 20px;
+}
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+/* =========================
+   SINGLE TASK ITEM
+========================= */
+
+.task-item {
+  background-color: #eeeeee;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
