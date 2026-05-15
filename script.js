@@ -11,3 +11,11 @@ function Task(taskName, taskDate) {
   this.completed = false;
 
 }
+
+// Prototype Method
+
+Task.prototype.markCompleted = function () {
+
+  this.completed = true;
+
+};
